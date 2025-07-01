@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三段式博客网站页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* 头部样式 */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* 导航栏样式 */
+        nav {
+            background-color: #444;
+            color: white;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        
+        /* 主要内容样式 */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        article {
+            flex: 2;
+            min-width: 300px;
+            margin-right: 20px;
+        }
+        
+        aside {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        /* 博客文章卡片样式 */
+        .blog-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .blog-card h2 {
+            margin-top: 0;
+        }
+        
+        /* 侧边栏样式 */
+        .sidebar-widget {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        /* 页脚样式 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <h1>我的博客</h1>
+        <p>分享生活中的点点滴滴</p>
+    </header>
+    
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">文章</a></li>
+            <li><a href="#">分类</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </nav>
+    
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 文章区域 -->
+        <article>
+            <div class="blog-card">
+                <h2>第一篇博客文章</h2>
+                <p class="meta">发布于 2023年10月1日</p>
+                <p>这是我的第一篇博客文章内容。这里会介绍一些关于我的事情和创建这个博客的初衷...</p>
+                <a href="#">阅读更多</a>
+            </div>
+            
+            <div class="blog-card">
+                <h2>第二篇博客文章</h2>
+                <p class="meta">发布于 2023年10月5日</p>
+                <p>这是我的第二篇博客文章，主要讨论了一些有趣的技术话题和我的学习心得...</p>
+                <a href="#">阅读更多</a>
+            </div>
+        </article>
+        
+        <!-- 侧边栏 -->
+        <aside>
+            <div class="sidebar-widget">
+                <h3>关于我</h3>
+                <p>我是一名前端开发者，热爱学习和分享技术知识。</p>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>文章分类</h3>
+                <ul>
+                    <li><a href="#">技术</a></li>
+                    <li><a href="#">生活</a></li>
+                    <li><a href="#">旅行</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2023 我的博客. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
